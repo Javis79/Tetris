@@ -1,0 +1,18 @@
+--cpu Cortex-M0+
+".\objects\spi.o"
+".\objects\main.o"
+".\objects\gpio.o"
+".\objects\oled.o"
+".\objects\font.o"
+".\objects\blocks.o"
+".\objects\area.o"
+".\objects\tsi.o"
+".\objects\gpioa.o"
+".\objects\klaw.o"
+".\objects\menu.o"
+".\objects\game.o"
+".\objects\startup_mkl05z4.o"
+".\objects\system_mkl05z4.o"
+--ro-base 0x00000000 --entry 0x00000000 --rw-base 0x1FFFFC00 --entry Reset_Handler --first __Vectors --strict --summary_stderr --info summarysizes --map --load_addr_map_info --xref --callgraph --symbols
+--info sizes --info totals --info unused --info veneers
+--list ".\Listings\Tetris.map" -o .\Objects\Tetris.axf
